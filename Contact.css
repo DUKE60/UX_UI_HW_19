@@ -1,0 +1,209 @@
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #98EEFA;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #042940;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #FB7700;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #042940;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+body {
+    float: center;
+    background-color: #98EEFA;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2000px;
+    padding-left: clamp(3%, 2%, 15%);
+    padding-right: clamp(3%, 2%, 15%);
+}
+
+.logo {
+    padding-top: 10px;
+    width: 300px;
+    height: auto;
+}
+
+a { 
+	transition: all .2s ease-in-out; 
+}
+a:hover { 
+    	transform: scale(1.05); 
+}
+
+p { 
+        transition: all .2s ease-in-out; 
+    }
+p:hover { 
+      transform: scale(1.05); 
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2000px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2.2rem;
+} 
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #042940;
+    padding-top: 10%;
+}
+
+
+h2 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: clamp(2rem, 3rem + 5vw, 3rem);
+    font-weight: 700;
+    color: #FB7700;
+    transition: all .2s ease-in-out; 
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+h2:hover { 
+    transform: scale(1.01); 
+}
+
+img { 
+	transition: all .2s ease-in-out; 
+}
+img:hover { 
+    	transform: scale(1.01); 
+    }
+
+@media screen and (min-width: 1001px) {
+    .Intro {
+        font-size: larger;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .Intro {
+        font-size: larger;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .Intro {
+      font-size: medium;
+      display: inline-block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .Profile-Photo {
+        padding-top: 1em;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.Contact {
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Linked {
+    Display: block;
+    width: 450px;
+    height: auto;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
